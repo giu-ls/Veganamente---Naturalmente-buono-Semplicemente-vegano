@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500;600&display=swap');
+
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #274925;
+    padding: 30px 20px;
+}
+
+.navbar-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+}
+
+.nav a {
+    font-family: 'Lora', serif;
+    color: #F9F4E6;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 12px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: #ffffff;
+}
+
+.nav a.active::after,
+.nav a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background-color: #F9F4E6;
+}
+
+
+.logo img {
+    height: 90px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 32px;
+    color: #F9F4E6;
+    cursor: pointer;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #274925;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav ul li {
+        border-top: 1px solid #356B33;
+    }
+
+    .nav a {
+        display: block;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        left: 20px;
+        top: 35px;
+    }
+
+    .menu-toggle:checked + .menu-icon + .nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-inner {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+}
+
+
+div.scroll-container {
+  background-color: #274925;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+
+body {
+    font-family: 'Lora', serif;
+    background-color: #F9F4E6;
+}
+
+h1 {
+    text-align: center;
+    color: #274925;
+}
+
+h2 {
+    text-align: center;
+    color: #274925;
+}
+
+h3 {
+    text-align: center;
+    color: #274925;
+}
+
+
+p {
+    text-align: justify;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 120%;
+    color: #274925;
+    text-align-last: center;
+}
+
+<img src = "/images/logo.PNG" alt = "logo" style = "width: 150px; height: 150px; margin-right: 5px; text-align: right; margin-top: 15px; margin-bottom: 15px">
+
